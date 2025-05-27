@@ -1,0 +1,5 @@
+#!/bin/bash
+python generate_direct_answer_questions.py --template_dir Direct_Answer_templates_normal
+python generate_direct_answer_questions.py --template_dir Direct_Answer_templates_LR
+python generate_direct_answer_questions.py --template_dir Direct_Answer_templates_in_out
+python generate_direct_answer_questions.py --template_dir Direct_Answer_templates_TD

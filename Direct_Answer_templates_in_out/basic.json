@@ -1,0 +1,177 @@
+[
+  {
+    "text":[
+      "How many objects are in panel <P>?",
+      "In panel <P>, how many objects can you find?",
+      "What is the count of objects in panel <P>?",
+      "Identify the number of objects located in panel <P>."
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          1
+        ],
+        "type":"count"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      }
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      1,2,3,4,5,6,7,8,9
+    ]
+  },
+  {
+    "text":[
+      "What is the shape of the object at <X> in panel <P>?",
+      "What shape is present at <X> in panel <P>?",
+      "Can you tell me the shape of the object located at <X> within panel <P>?",
+      "Which shape can be found at <X> of panel <P>?"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "side_inputs":[
+          "<X>"
+        ],
+        "inputs":[
+          1
+        ],
+        "type":"filter_unique"
+      },
+      {
+        "inputs":[
+          2
+        ],
+        "type":"query_shape"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Shape",
+        "name":"<S>"
+      },
+      {
+        "type":"Position",
+        "name":"<X>"
+      }
+    ],
+    "constraints":[
+    ],
+    "answers_number": 4,
+    "answer_space": [
+      "triangle",
+      "square",
+      "pentagon",
+      "hexagon",
+      "circle"
+    ]
+  },
+  {
+    "text":[
+      "Where is the <S> positioned in panel <P>?",
+      "In panel <P>, could you describe the exact position where the <S> is located?",
+      "Can you specify the precise location of the <S> within panel <P>, indicating where it is situated?",
+      "Within panel <P>, where exactly is the <S> positioned, and can you point out its location?"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "side_inputs":[
+          "<S>"
+        ],
+        "inputs":[
+          1
+        ],
+        "type":"filter_unique"
+      },
+      {
+        "inputs":[
+          2
+        ],
+        "type":"query_position"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Shape",
+        "name":"<S>"
+      },
+      {
+        "type":"Position",
+        "name":"<X>"
+      }
+    ],
+    "constraints":[
+    ],
+    "answers_number": {
+      "center_single": 3,
+      "distribute_four": 3,
+      "distribute_nine": 3,
+      "left_center_single_right_center_single": 2,
+      "up_center_single_down_center_single": 2,
+      "in_center_single_out_center_single": 2,
+      "in_distribute_four_out_center_single": 3
+    },
+    "answer_space": {
+      "center_single": ["center", "top-left", "top-right", "bottom-left", "bottom-right"],
+      "distribute_four": ["top-left", "top-right", "bottom-left", "bottom-right"],
+      "distribute_nine": ["top-left", "top-center", "top-right", "middle-left", "middle-center", "middle-right", "bottom-left", "bottom-center", "bottom-right"],
+      "left_center_single_right_center_single": ["left", "right"],
+      "up_center_single_down_center_single": ["top", "down"],
+      "in_center_single_out_center_single": ["the outer part", "the inner part"],
+      "in_distribute_four_out_center_single": ["outer part", "top-left of the inner part", "top-right of the inner part", "bottom-left of the inner part", "bottom-right of the inner part"]
+    }
+
+  }
+]

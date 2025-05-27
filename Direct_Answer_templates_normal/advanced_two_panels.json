@@ -1,0 +1,336 @@
+[
+  {
+    "text":[
+      "Does panel <P> contain the same number of objects, more objects, or fewer objects than panel <P2>?",
+      "In panel <P>, is the number of objects the same as, greater than, or less than the number of objects in panel <P2>?",
+      "Does panel <P> have an equal, greater, or fewer number of objects compared to panel <P2>?",
+      "How does the number of objects in panel <P> compare to the number of objects in panel <P2>? Is it the same, more, or fewer?"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          1
+        ],
+        "type":"count"
+      },
+      {
+        "side_inputs":[
+          "<P2>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          3
+        ],
+        "type":"count"
+      },
+      {
+        "inputs":[
+          2,
+          4
+        ],
+        "type":"compare_number"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Panel",
+        "name":"<P2>"
+      }
+    ],
+    "constraints":[
+      {
+        "params":[
+          1,
+          3
+        ],
+        "type":"SAME_ROW"
+      }
+    ],
+    "answers_number": 3,
+    "answer_space": [
+      "The same",
+      "More",
+      "Fewer"
+    ]
+  },
+  {
+    "text":[
+      "Is the shape of all the objects in panel <P> have the same, more, or fewer edges compared to the objects in panel <P2>? If the shapes within either panel are already different from each other, select 'Not Comparable.' (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Are the shapes of all objects in panel <P> the same as, have more edges, or have fewer edges than the objects in panel <P2>? If there is already variation in shapes within either panel, choose 'Not Comparable.' (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "In panel <P>, are the shapes of all objects the same as, or do they have more or fewer edges compared to those in panel <P2>? If there are differences in shapes within either panel, select 'Not Comparable.' (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Do the shapes of all objects in panel <P> have the same, more, or fewer edges compared to the shapes in panel <P2>? If the shapes within either panel are inconsistent, select 'Not Comparable.' (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "side_inputs":[
+          "<P2>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          1,
+          2
+        ],
+        "type":"two_panel_shape_equal_comparison"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Panel",
+        "name":"<P2>"
+      }
+    ],
+    "constraints":[
+      {
+        "params":[
+          1,
+          2
+        ],
+        "type":"SAME_ROW"
+      }
+    ],
+    "answers_number": 4,
+    "answer_space": [
+      "The same",
+      "Fewer",
+      "More",
+      "Not comparable"
+    ]
+  },
+  {
+    "text":[
+      "Is the size of all the objects in panel <P> the same as, smaller or larger than the objects in panel <P2>? If the sizes within either panel are already different from each other, select 'Not Comparable.'",
+      "Are all objects in panel <P> the same size as, smaller than, or larger than the objects in panel <P2>? If there is size variation within either panel, choose 'Not Comparable.'",
+      "In panel <P>, do all objects have the same size as, or are they smaller or larger compared to the objects in panel <P2>? If there are differences in size within either panel, select 'Not Comparable.'",
+      "Do the sizes of all objects in panel <P> the same, smaller, or larger compared to the sizes of objects in panel <P2>? If there are inconsistencies in sizes within either panel, choose 'Not Comparable.'"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "side_inputs":[
+          "<P2>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          1,
+          2
+        ],
+        "type":"two_panel_size_equal_comparison"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Panel",
+        "name":"<P2>"
+      }
+    ],
+    "constraints":[
+      {
+        "params":[
+          1,
+          2
+        ],
+        "type":"SAME_ROW"
+      }
+    ],
+    "answers_number": 4,
+    "answer_space": [
+      "The same",
+      "Smaller",
+      "Larger",
+      "Not comparable"
+    ]
+  },
+  {
+    "text":[
+      "Is the color of all the objects in panel <P> the same as, darker or brighter than the objects in panel <P2>? If the colors within either panel are already different from each other, select 'Not Comparable.'",
+      "Are all objects in panel <P> the same color as, darker than, or brighter than the objects in panel <P2>? If there is color variation within either panel, choose 'Not Comparable.'",
+      "In panel <P>, are the colors of all objects the same as, or do they appear darker or brighter compared to the colors of objects in panel <P2>? If there are differences in color within either panel, select 'Not Comparable.'",
+      "Do the colors of all objects in panel <P> match, or are they darker or brighter compared to the colors in panel <P2>? If the colors within either panel vary, choose 'Not Comparable.'"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "side_inputs":[
+          "<P2>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          1,
+          2
+        ],
+        "type":"two_panel_color_equal_comparison"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Panel",
+        "name":"<P2>"
+      }
+    ],
+    "constraints":[
+      {
+        "params":[
+          1,
+          2
+        ],
+        "type":"SAME_ROW"
+      }
+    ],
+    "answers_number": 4,
+    "answer_space": [
+      "The same",
+      "Darker",
+      "Brighter",
+      "Not comparable"
+    ]
+  },
+  {
+    "text":[
+      "Is the position of all the objects in panel <P> the same as the objects in panel <P2>?",
+      "Are the positions of all objects in panel <P> identical to the positions of objects in panel <P2>?",
+      "Do the objects in panel <P> occupy the same positions as those in panel <P2>?",
+      "Is the position of objects in panel <P> the same as that of objects in panel <P2>?"
+    ],
+    "nodes":[
+      {
+        "inputs":[ ],
+        "type":"scene"
+      },
+      {
+        "side_inputs":[
+          "<P>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "side_inputs":[
+          "<P2>"
+        ],
+        "inputs":[
+          0
+        ],
+        "type":"query_panel"
+      },
+      {
+        "inputs":[
+          1,
+          2
+        ],
+        "type":"two_panel_position_equal_comparison"
+      }
+    ],
+    "params":[
+      {
+        "type":"Panel",
+        "name":"<P>"
+      },
+      {
+        "type":"Panel",
+        "name":"<P2>"
+      }
+    ],
+    "constraints":[
+      {
+        "params":[
+          1,
+          2
+        ],
+        "type":"SAME_ROW"
+      }
+    ],
+    "answers_number": 2,
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the top part of each panel, and identify the rule that governs the number of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the top areas of each panel, and determine the rule that dictates the number of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the top portions of each panel, and identify the rule that controls the object count.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the top parts of each panel, and uncover the rule that governs the number of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Up"
+        ],
+        "inputs":[
+        ],
+        "type":"query_number_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The number of objects gradually decreases by 1.",
+      "The number of objects remains constant.",
+      "The number of objects gradually increases by 1.",
+      "The number of objects distributes three distinct values across panels, rotating through each possible permutation of these values.",
+      "The number of objects in the last panel equals the sum of the objects in the previous two panels.",
+      "The number of objects in the last panel equals the difference between the objects in the previous two panels.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the top part of each panel, and identify the rule that governs the position of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the top areas of each panel, and determine the rule that dictates the position of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the top portions of each panel, and identify the rule that controls the position of objects.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the top parts of each panel, and uncover the rule that governs the position of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Up"
+        ],
+        "inputs":[
+        ],
+        "type":"query_position_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "If an object is in the first panel but not in the second at corresponding position, it appears in the third panel.",
+      "The position of objects in the last panel is the union of positions from the previous two panels.",
+      "Three distinct position settings across panels, rotating through each possible permutation of these settings.",
+      "The position of objects does not change across panels.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the top part of each panel, and identify the rule that governs the shape of the objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Analyze the three panels in the image from left to right, concentrating only on the top areas of each panel, and determine the rule that dictates the shape of objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Look at the three panels in the image from left to right, paying attention only to the top portions of each panel, and identify the rule that controls the shape of objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the top parts of each panel, and uncover the rule that governs the shape of objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)"
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Up"
+        ],
+        "inputs":[
+        ],
+        "type":"query_shape_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The edge number of shape gradually decreases by 1.",
+      "The edge number of shape gradually increases by 1.",
+      "Three distinct shapes across panels, rotating through each possible permutation of these shapes.",
+      "The shape remains constant.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the top part of each panel, and identify the rule that governs the size of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the top areas of each panel, and determine the rule that dictates the size of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the top portions of each panel, and identify the rule that controls the size of objects.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the top parts of each panel, and uncover the rule that governs the size of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Up"
+        ],
+        "inputs":[
+        ],
+        "type":"query_size_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The size of objects gradually increases by a constant amount each time.",
+      "The size of objects gradually decreases by a constant amount each time.",
+      "The size of objects in the last panel is the sum of the sizes in the previous two panels.",
+      "The size of objects in the last panel is the difference between the sizes in the previous two panels.",
+      "Three distinct sizes across panels, rotating through each possible permutation of these sizes.",
+      "The size remains constant.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the top part of each panel, and identify the rule that governs the color of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the top areas of each panel, and determine the rule that dictates the color of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the top portions of each panel, and identify the rule that controls the color of objects.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the top parts of each panel, and uncover the rule that governs the color of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Up"
+        ],
+        "inputs":[
+        ],
+        "type":"query_color_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The color of objects gradually darkens by a constant amount each time.",
+      "The color of objects gradually brightens by a constant amount each time.",
+      "The color of objects in the last panel is the sum of the colors in the previous two panels.",
+      "The color of objects in the last panel is the difference between the colors in the previous two panels.",
+      "Three distinct colors across panels, rotating through each possible permutation of these colors.",
+      "The color remains constant.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the bottom part of each panel, and identify the rule that governs the number of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the bottom areas of each panel, and determine the rule that dictates the number of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the bottom portions of each panel, and identify the rule that controls the object count.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the bottom parts of each panel, and uncover the rule that governs the number of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Down"
+        ],
+        "inputs":[
+        ],
+        "type":"query_number_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The number of objects gradually decreases by 1.",
+      "The number of objects remains constant.",
+      "The number of objects gradually increases by 1.",
+      "The number of objects distributes three distinct values across panels, rotating through each possible permutation of these values.",
+      "The number of objects in the last panel equals the sum of the objects in the previous two panels.",
+      "The number of objects in the last panel equals the difference between the objects in the previous two panels.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the bottom part of each panel, and identify the rule that governs the position of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the bottom areas of each panel, and determine the rule that dictates the position of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the bottom portions of each panel, and identify the rule that controls the position of objects..",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the bottom parts of each panel, and uncover the rule that governs the position of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Down"
+        ],
+        "inputs":[
+        ],
+        "type":"query_position_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "If an object is in the first panel but not in the second at corresponding position, it appears in the third panel.",
+      "The position of objects in the last panel is the union of positions from the previous two panels.",
+      "Three distinct position settings across panels, rotating through each possible permutation of these settings.",
+      "The position of objects does not change across panels.",
+      "No clear rule is present."
+    ]
+  },
+  {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the bottom part of each panel, and identify the rule that governs the shape of the objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Analyze the three panels in the image from left to right, concentrating only on the bottom areas of each panel, and determine the rule that dictates the shape of objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Look at the three panels in the image from left to right, paying attention only to the bottom portions of each panel, and identify the rule that controls the shape of objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the bottom parts of each panel, and uncover the rule that governs the shape of objects. (Note: The edge number increases in the following order: triangle, square, pentagon, hexagon, circle)"
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Down"
+        ],
+        "inputs":[
+        ],
+        "type":"query_shape_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The edge number of shape gradually decreases by 1.",
+      "The edge number of shape gradually increases by 1.",
+      "Three distinct shapes across panels, rotating through each possible permutation of these shapes.",
+      "The shape remains constant.",
+      "No clear rule is present."
+    ]
+  },
+    {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the bottom part of each panel, and identify the rule that governs the size of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the bottom areas of each panel, and determine the rule that dictates the size of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the bottom portions of each panel, and identify the rule that controls the size of objects.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the bottom parts of each panel, and uncover the rule that governs the size of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Down"
+        ],
+        "inputs":[
+        ],
+        "type":"query_size_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The size of objects gradually increases by a constant amount each time.",
+      "The size of objects gradually decreases by a constant amount each time.",
+      "The size of objects in the last panel is the sum of the sizes in the previous two panels.",
+      "The size of objects in the last panel is the difference between the sizes in the previous two panels.",
+      "Three distinct sizes across panels, rotating through each possible permutation of these sizes.",
+      "The size remains constant.",
+      "No clear rule is present."
+    ]
+  },
+    {
+    "text":[
+      "Examine the three panels in the image as a row from left to right, focus only on the bottom part of each panel, and identify the rule that governs the color of the objects.",
+      "Analyze the three panels in the image from left to right, concentrating only on the bottom areas of each panel, and determine the rule that dictates the color of objects.",
+      "Look at the three panels in the image from left to right, paying attention only to the bottom portions of each panel, and identify the rule that controls the color of objects.",
+      "Inspect the three panels in the image from left to right, focusing exclusively on the bottom parts of each panel, and uncover the rule that governs the color of objects."
+    ],
+    "nodes":[
+      {
+        "side_inputs":[
+          "Down"
+        ],
+        "inputs":[
+        ],
+        "type":"query_color_rule"
+      }
+    ],
+    "params":[
+    ],
+    "constraints":[ ],
+    "answers_number": 4,
+    "answer_space": [
+      "The color of objects gradually darkens by a constant amount each time.",
+      "The color of objects gradually brightens by a constant amount each time.",
+      "The color of objects in the last panel is the sum of the colors in the previous two panels.",
+      "The color of objects in the last panel is the difference between the colors in the previous two panels.",
+      "Three distinct colors across panels, rotating through each possible permutation of these colors.",
+      "The color remains constant.",
+      "No clear rule is present."
+    ]
+  }
+]
