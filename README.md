@@ -54,7 +54,20 @@ Download original RAVEN dataset and unzip it under the **`./RAVEN`** directory [
 ### Run
 Run **`./generate_dataset.sh`**
 
+## 📚 Citation
 
+If you find this dataset useful in your research or work, please consider citing:
+
+```bibtex
+@misc{jiang2025perceptionevaluatingabstractvisual,
+      title={Beyond Perception: Evaluating Abstract Visual Reasoning through Multi-Stage Task}, 
+      author={Yanbei Jiang and Yihao Ding and Chao Lei and Jiayang Ao and Jey Han Lau and Krista A. Ehinger},
+      year={2025},
+      eprint={2505.21850},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.21850}, 
+}
 
 
 
